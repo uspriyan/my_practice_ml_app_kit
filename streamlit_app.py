@@ -24,3 +24,12 @@ with st.sidebar:
   #Torgersen Dream Biscoe
   bill_depth_mm=st.slider('bill_depth_mm',3.4,11.2)
   bill_weight_g=st.slider('bill_weight_g',4.5,10.3)
+with st.expander('My_table'):
+  data={
+    'Island':Island,
+    'Species':Species,
+    'bill_depth_mm':bill_depth_mm,
+    'bill_weight_g':bill_weight_g
+  }
+  new_df1=pd.Dataframe(data)
+  my_table=concat([new_df1,x],axis=1,ignore_index=true)
