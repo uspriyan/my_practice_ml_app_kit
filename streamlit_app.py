@@ -31,5 +31,5 @@ with st.expander('My_table'):
     'bill_depth_mm':bill_depth_mm,
     'bill_weight_g':bill_weight_g
   }
-  new_df1=pd.Dataframe(data)
+  new_df1=pd.DataFrame(data)
   my_table=concat([new_df1,x],axis=1,ignore_index=true)
