@@ -18,15 +18,18 @@ with st.expander('Data Visualization'):
 with st.sidebar:
   st.header('Modifications')
   Species=st.selectbox('Species',('Adelie','Gentoo','Chinstrap'))
-  Island=st.selectbox('Island',('Torgersen','Dream','Biscoe'))
+  island=st.selectbox('Island',('Torgersen','Dream','Biscoe'))
   #Torgersen Dream Biscoe
   bill_depth_mm=st.slider('bill_depth_mm',3.4,11.2)
   bill_weight_g=st.slider('bill_weight_g',4.5,10.3)
 with st.expander('My_table'):
   data={
-    'Island':Island,
-    'bill_depth_mm':bill_depth_mm,
-    'bill_weight_g':bill_weight_g
+   'island': island,            
+    'bill_length_mm': 43.9,     
+    'bill_depth_mm': bill_depth_mm,
+    'flipper_length_mm': 201.0,  # Added: Missing column (you can replace with a slider variable)
+    'body_mass_g': bill_weight_g,# Matches column location
+    'sex': 'male'  
   }
   new_df1=pd.DataFrame(data,index=[0])
   my_table=pd.concat([new_df1,x],axis=0)
