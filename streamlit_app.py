@@ -5,6 +5,13 @@ st.info('here we are going to find Penguin Species')
 with st.expander('Penguine Table'):
   df=pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_cleaned.csv')
   df
+  st.write('X-value')
+  X=st.drop('species',axis=1)
+  X
+  st.write('Y-value')
+  Y=st.'species'
+  Y
+  
 with st.expander('Data Visualization'):
   st.info('Graph between Length of Penguin VS Body Mass of Penguine')
   #"island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex
