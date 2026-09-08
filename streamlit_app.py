@@ -19,6 +19,8 @@ with st.expander('Data Visualization'):
   st.scatter_chart(data=df,x='bill_length_mm',y='body_mass_g',color='species')
 with st.sidebar:
   st.header('Modifications')
-  Island=st.selectbox('Island',('Archmid','Gayathri','Shruthika'))
+  Species=st.selectbox('Species',('Adelie','Gentoo','Chinstrap'))
+  Island=st.selectbox('Island',('Torgersen','Dream','Biscoe'))
+  #Torgersen Dream Biscoe
   bill_depth_mm=st.slider('bill_depth_mm',3.4,11.2)
   bill_weight_g=st.slider('bill_weight_g',4.5,10.3)
