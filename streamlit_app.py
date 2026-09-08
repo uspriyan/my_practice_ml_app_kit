@@ -6,11 +6,12 @@ with st.expander('Penguine Table'):
   df=pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_cleaned.csv')
   df
   st.write('X-value')
-  X=st.drop('species',axis=1)
-  X
+  X=df.drop('species',axis=1)
+  x
   st.write('Y-value')
-  Y=st.species
-  Y
+  y=df.species
+  y
+  
   
 with st.expander('Data Visualization'):
   st.info('Graph between Length of Penguin VS Body Mass of Penguine')
