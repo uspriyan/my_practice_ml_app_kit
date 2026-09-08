@@ -9,7 +9,7 @@ with st.expander('Penguine Table'):
   X=st.drop('species',axis=1)
   X
   st.write('Y-value')
-  Y=st.'species'
+  Y=st.species
   Y
   
 with st.expander('Data Visualization'):
