@@ -27,9 +27,8 @@ with st.sidebar:
 with st.expander('My_table'):
   data={
     'Island':Island,
-    'Species':Species,
     'bill_depth_mm':bill_depth_mm,
     'bill_weight_g':bill_weight_g
   }
-  new_df1=pd.DataFrame(data)
-  my_table=concat([new_df1,x],axis=1,ignore_index=true)
+  new_df1=pd.DataFrame(data,index={0})
+  my_table=pd.concat([new_df1,x],axis=1)
