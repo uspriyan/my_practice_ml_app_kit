@@ -7,7 +7,7 @@ Description of the app ...
 
 ## Demo App
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://my_practice_ml_app_kit.streamlit.app/](https://mypracticemlappkit-fvsfbb47tmwqlmtmcbnhsr.streamlit.app/))
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mypracticemlappkit-fvsfbb47tmwqlmtmcbnhsr.streamlit.app/)
 
 ## GitHub Codespaces
 
