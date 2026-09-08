@@ -29,5 +29,5 @@ with st.expander('My_table'):
     'bill_weight_g':bill_weight_g
   }
   new_df1=pd.DataFrame(data,index=[0])
-  my_table=pd.concat([new_df1,x],axis=1)
+  my_table=pd.concat([new_df1,x],axis=0)
   my_table
