@@ -32,5 +32,5 @@ with st.expander('My_table'):
     'sex': 'male'  
   }
   new_df1=pd.DataFrame(data,index=[0])
-  my_table=pd.concat([new_df1,x],axis=0,ignore_index=true)
+  my_table=pd.concat([new_df1,x],axis=0,ignore_index=True)
   my_table
