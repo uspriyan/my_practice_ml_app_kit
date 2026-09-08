@@ -17,4 +17,8 @@ with st.expander('Data Visualization'):
   st.info('Graph between Length of Penguin VS Body Mass of Penguine')
   #"island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex
   st.scatter_chart(data=df,x='bill_length_mm',y='body_mass_g',color='species')
-  
+with st.sidebar:
+  st.header('Modifications')
+  Island=st.selectbox('Island',('Archmid','Gayathri','Shruthika'))
+  bill_depth_mm=st.slider('bill_depth_mm',3.4,11.2)
+  bill_weight_g=st.slider('bill_weight_g',4.5,10.3)
