@@ -7,5 +7,5 @@ with st.expander('Penguine Table'):
   df
 with st.expander('Data Visualization'):
   #"island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex
-  st.scatter_plot(data=df,x='bill_length_mm',y='body_mass_g',color='species')
+  st.scatter_chart(data=df,x='bill_length_mm',y='body_mass_g',color='species')
   
