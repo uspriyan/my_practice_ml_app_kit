@@ -11,8 +11,6 @@ with st.expander('Penguine Table'):
   st.write('Y-value')
   y=df[['species']]
   y
-  
-  
 with st.expander('Data Visualization'):
   st.info('Graph between Length of Penguin VS Body Mass of Penguine')
   #"island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex
@@ -32,3 +30,4 @@ with st.expander('My_table'):
   }
   new_df1=pd.DataFrame(data,index=[0])
   my_table=pd.concat([new_df1,x],axis=1)
+  my_table
