@@ -6,7 +6,7 @@ with st.expander('Penguine Table'):
   df=pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/refs/heads/master/penguins_cleaned.csv')
   df
   st.write('X-value')
-  x=df.drop('species',axis=1)
+  x=df.drop('species',axis=2)
   x
   st.write('Y-value')
   y=df.species
