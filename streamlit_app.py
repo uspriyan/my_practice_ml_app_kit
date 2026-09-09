@@ -12,7 +12,7 @@ with st.expander('Penguine Table'):
   y=df[['species']]
   y
   #encode
-  dummy_df1=get_dummies(df,dtype= int )
+  dummy_df1=pd.get_dummies(df,dtype= int )
   dummy_df1[:1]
 with st.expander('Data Visualization'):
   st.info('Graph between Length of Penguin VS Body Mass of Penguine')
