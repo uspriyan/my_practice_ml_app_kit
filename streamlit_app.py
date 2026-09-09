@@ -22,6 +22,7 @@ with st.sidebar:
   #Torgersen Dream Biscoe
   bill_depth_mm=st.slider('bill_depth_mm',3.4,11.2)
   bill_weight_g=st.slider('bill_weight_g',4.5,10.3)
+  gender=st.selectbox('gender',('Male','Female'))
 with st.expander('My_table'):
   data={
    'island': island,            
@@ -29,8 +30,11 @@ with st.expander('My_table'):
     'bill_depth_mm': bill_depth_mm,
     'flipper_length_mm': 201.0,  # Added: Missing column (you can replace with a slider variable)
     'body_mass_g': bill_weight_g,# Matches column location
-    'sex': 'male'  
+    'sex': gender
   }
   new_df1=pd.DataFrame(data,index=[0])
+  st.write('##Input row')
+  new_df1
+  st.write('Combined Table')
   my_table=pd.concat([new_df1,x],axis=0,ignore_index=True)
   my_table
