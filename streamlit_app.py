@@ -14,6 +14,14 @@ with st.expander('Penguine Table'):
   y_raw
   #encode
   dummy_df1[:1]
+  target_df={
+  'Adelie':0,
+  'Gentoo':1,
+   'Chinstrap':2 
+  }
+  def target_encoder(val):
+    return target_df[val]
+  y=y_raw.apply(target_encoder)
 with st.expander('Data Visualization'):
   st.info('Graph between Length of Penguin VS Body Mass of Penguine')
   #"island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex
