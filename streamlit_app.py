@@ -11,6 +11,9 @@ with st.expander('Penguine Table'):
   st.write('Y-value')
   y=df[['species']]
   y
+  #encode
+  dummy_df1=get_dummies(df,dtype= int )
+  dummy_df1[:1]
 with st.expander('Data Visualization'):
   st.info('Graph between Length of Penguin VS Body Mass of Penguine')
   #"island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex
