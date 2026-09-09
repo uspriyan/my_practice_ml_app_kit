@@ -21,6 +21,7 @@ with st.expander('Penguine Table'):
   }
   def target_encoder(val):
     return target_df[val]
+  st.write('Encoded Y value')
   y=y_raw['species'].apply(target_encoder)
   y
 with st.expander('Data Visualization'):
